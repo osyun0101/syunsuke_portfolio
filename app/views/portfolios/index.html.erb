@@ -248,11 +248,24 @@
   </div>
 
   <div class="creation">
-    <p>-  作成物 -</p>
-    <div>
-      <p>フリマアプリ</p>
-      <div>
-      
+    <p class="create-p">-  作成物 -</p>
+    <div class="furima-box">
+      <p id="furima">・フリマアプリ</p>
+      <div class="gif-box">
+         <p>出品機能</p>
+         <div class="listing">
+           <%=image_tag '/images/出品.gif'%>
+           <%=image_tag '/images/出品一覧.gif'%>
+         </div>
+         <p>検索機能</p>
+         <div>
+            <%=image_tag '/images/検索.gif', class: "search"%>
+         </div>
+         <p>購入機能</p>
+        <div class="shopping">
+          <%=image_tag '/images/購入.gif'%>
+          <%=image_tag '/images/購入後.gif'%>
+        </div>
       </div>
       <ul class="item-box">
         <li>内容:</li>
