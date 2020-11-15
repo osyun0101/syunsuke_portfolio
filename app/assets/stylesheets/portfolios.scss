@@ -24,15 +24,28 @@ body {
   display: flex;
   justify-content: flex-end;
   position: fixed;
-  z-index: 9999;
   height: 60px;
   width: 100vw;
+  animation-name: backcolor;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes backcolor {
+  0% {  
+    background-color: rgba(34, 34, 34, 0);
+  }
+  100% {
+    background-color: rgba(34, 34, 34, 1);
+    z-index: 99999;
+  }
 }
 
 .header li{
   margin-right: 30px;
   line-height: 60px;
-  font-size: 16px;
+  font-size: 20px;
   color: rgba(255,255,255,0);
   cursor: pointer;
   animation-name: fadeIn;
@@ -69,7 +82,7 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  z-index: 99999;
+  z-index: 9999;
   background-color: rgba(0, 0, 0, 0.6);
   animation-name: fadeout;
   animation-delay: 3s;
@@ -180,4 +193,17 @@ body {
 .shopping {
   display: flex;
   justify-content: space-around;
+}
+
+.tesma-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-width: 600px;
+  margin-bottom: 40px;
+}
+
+.tesma-box img{
+  width: 40vw;
+  min-width: 240px;
 }
