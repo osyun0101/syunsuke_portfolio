@@ -1,9 +1,8 @@
 <div>
-  <ul class="header">
-    <li>自己紹介</li>
-    <li>経歴</li>
-    <li>作成物</li>
-    <li>ビジョン</li>
+  <ul class="header" id="header-id">
+    <li><%=link_to '自己紹介',"#profile-id"%></li>
+    <li><%=link_to '経歴', '#career-id'%></li>
+    <li><%=link_to '作成物', '#create-id'%></li>
   </ul>
   <div class="background-image">
     <div class="frontcolor">
@@ -205,7 +204,7 @@
   </div>
 
   <div class="profile">
-    <p class="profile-title">- 自己紹介 -</p>
+    <p class="profile-title" id="profile-id">- 自己紹介 -</p>
       <div class="profile-box">
       <ul class="item-box">
         <li class="item">氏名：</li>
@@ -235,7 +234,7 @@
   </div>
 
   <div class="career">
-  <p>- 経歴 -</p>
+  <p id="career-id">- 経歴 -</p>
   <ul class="career-box">
     <li>大学時代、ガールズバーの店長を経験。就任当時から約1年半で200万円から930万円まで増加させる。</li>
     <li>大学卒業後、IT商材の営業会社に入社。</li>
@@ -243,12 +242,12 @@
     <li>退職後、独学で学習を始める。</li>
     <li>独学の途中で、コードを書くだけではエンジニアになれないと感じプログラミングスクールに入学。</li>
     <li>プログラミングスクールではコードを書くだけでなくGitHub、デプロイ、AWSなどを扱うことができ、エンジニアとして必要な基礎を学ぶ。</li>
-    <li>プログラミングスクールを卒業、現在に至る。</li>
+    <li>現在、プログラミングスクールを卒業し、オリジナルアプリの開発とpaizaにてAランクに挑戦中。</li>
   </ul>
   </div>
 
   <div class="creation">
-    <p class="create-p">-  作成物 -</p>
+    <p class="create-p" id="create-id">-  作成物 -</p>
     <div class="furima-box">
       <p id="furima">・フリマアプリ</p>
       <div class="gif-box">
@@ -273,11 +272,11 @@
       </ul>
       <ul class="item-box">
         <li class="item">GitHub URL:</li>
-        <li class="content">https://github.com/osyun0101/furima-29762</li>
+        <li class="content"><%=link_to 'https://github.com/osyun0101/furima-29762','https://github.com/osyun0101/furima-29762'%></li>
       </ul>
       <ul class="item-box">
         <li class="item">Heroku URL:</li>
-        <li class="content">https://furima-29762.herokuapp.com/</li>
+        <li class="content"><%=link_to 'https://furima-29762.herokuapp.com', 'https://furima-29762.herokuapp.com'%></li>
       </ul>
       <ul class="item-box">
         <li class="item">使用技術:</li>
@@ -311,11 +310,11 @@
       </ul>
       <ul class="item-box">
         <li class="item">GitHub URL:</li>
-        <li class="content">https://github.com/osyun0101/TESMA</li>
+        <li class="content"><%=link_to 'https://github.com/osyun0101/TESMA', 'https://github.com/osyun0101/TESMA'%></li>
       </ul>
       <ul class="item-box">
         <li class="item">Heroku URL:</li>
-        <li class="content">https://tesma.herokuapp.com</li>
+        <li class="content"><%=link_to 'https://tesma.herokuapp.com','https://tesma.herokuapp.com'%></li>
       </ul>
       <ul class="item-box">
         <li class="item">使用技術:</li>
@@ -324,7 +323,8 @@
     </div>
   </div>
 
-  <div class="vistion">
-  <p class="title-vistion">- ビジョン -</p>
+  <div class="footer">
+    <p>Shunsuke Suzuki</p>
+    <p>- Portfolio -</p>
   </div>
 </div>

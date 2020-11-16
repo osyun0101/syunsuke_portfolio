@@ -5,6 +5,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -12,5 +13,13 @@
 
   <body>
     <%= yield %>
+    <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+    speedAsDuration:true,
+    speed:1000,
+    easing:'easeInOutQuint',
+    header: "#header-id"
+   });
+</script>
   </body>
 </html>
